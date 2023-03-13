@@ -184,6 +184,19 @@ margin: 18px 10px;
     color: white;
 }
 
+.searchInput input{
+    border: transparent;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+}
+    
+    
+.searchInput input:focus{
+    border: none;
+    outline: none;
+}
+
 
 .fa-solid{
     color: black;
@@ -220,19 +233,6 @@ margin-right: 10px;
 
 .iconFilter-margin{
     margin-right: 10px;
-}
-
-.searchInput input{
-border: transparent;
-height: 55px;
-width: 100%;
-text-align: center;
-}
-
-
-.searchInput input:focus{
-    border: none;
-    outline: none;
 }
 
 
