@@ -174,11 +174,6 @@ margin: 40px 0px 30px;
 margin: 18px 10px;
 }
 
-input{
-    width: 100%;
-    text-align: center;
-}
-
 
 .iconSearch{
     display: none;
@@ -228,8 +223,16 @@ margin-right: 10px;
 }
 
 .searchInput input{
-border: none;
-height: 55px
+border: transparent;
+height: 55px;
+width: 100%;
+text-align: center;
+}
+
+
+.searchInput input:focus{
+    border: none;
+    outline: none;
 }
 
 

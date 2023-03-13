@@ -34,11 +34,13 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
-            <div class="sectionSearch-button flexCenter button1">
+            <div class="sectionSearch-button flexCenter button1 searchInput">
               <div class="iconBoxSearch"><i class="fa-solid fa-location-dot fa-lg"></i></div>
-                <div class="searchInput"><input type="search" id="site-search" value="Marseille, Terre" class=" W700-18px" ></div>
+                <input type="search" id="site-search" value="Marseille, Terre" class=" W700-18px" >
                 <div class="searchButton W700-18px"><p >Rechercher</p><div class="iconSearch"><i class="fa-solid fa-magnifying-glass"></i></div></div>
             </div>
+
+            <!-------- Filtres ------>
             <div class=" filterGroup ">
             <div class="W700-18px"><p>Filtres</p></div>
             <div class="filterButtonMobile flexCenter">
@@ -54,9 +56,11 @@
             </div>
         </section>
 
-
+        <!---------------------------- HEBERGEMENT & POPULAIRE & ACTIVITES -------------------------------->
         <main>
             <div class="hebergements-and-populaires">
+
+                <!------- HEBERGEMENT ------>
                 <section class="hebergements">
                     <h2 class="section-title" id="hébergements">Hébergements à Marseille</h2>
                     <div class="groupCard flexCenter flexWrap ">
@@ -111,6 +115,8 @@
                     </div>
                     <h3>Afficher Plus</h3>
                 </section>
+
+                <!--------- POPULAIRE --------->
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -171,6 +177,8 @@
                     </div>
                 </section>
             </div>
+
+            <!---------------------------  ACTIVITES ----------------------------->
             <section class="section-activités">
                 <h2 id="activités">Activités à Marseille</h2>
                 <div class="activitésGroupcards flexCenter flexBetween flexWrap">
@@ -185,6 +193,8 @@
                 </div>
             </section>
         </main>
+
+        <!----------------------------- FOOTER --------------------------------->
         <footer class="flexCenter">
             <div><h3>A propos</h3>
                 <p>Fonctionnement du site</p>
