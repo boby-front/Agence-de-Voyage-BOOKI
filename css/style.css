@@ -103,14 +103,17 @@ body {
     justify-content: space-around;
 }
 
+/*************** HEARDER *****************/
+header{
+    width: 100%;
+}
+
 
 /**************** NAVBAR *****************/
 
 nav {
-    display: flex;
     width: 100%;
     height: 80px;
-    justify-content: space-between;
 }
 
 nav a{
@@ -118,12 +121,15 @@ nav a{
     box-sizing: border-box;
 }
 
+
 nav a:hover{
     color: var(--main-color);
     border-top: var(--main-color) solid 2px;
 }
+
+
 .bookiLogo {
-   margin: auto -30px;
+   margin: auto 0px;
    height: 19px;
    width: auto;
 }
@@ -134,7 +140,6 @@ nav a:hover{
 }
 .nav-links {
     display: flex;
-    margin-right: -30px;
 }
 
 
@@ -144,9 +149,7 @@ nav a:hover{
     width: 100%;
 }
 .sectionSearch-button{
-justify-content: space-between;
 border: solid 1px  #F2F2F2;
-;
 border-radius:  15px;
 overflow: hidden;
 cursor: pointer;
@@ -210,19 +213,18 @@ margin: 18px 10px;
 
 .filterGroup{
     max-width: 760px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    
 }
  
 .filterButton {
 border: solid 1px #D9D9D9;
 border-radius: 50px;
-padding: 0 19px;
+padding: 0 15px;
 height: 55px;
 margin-right: 10px;
+}
+
+.filterButton p{
+    margin: 10px 0px;
 }
 
 .filterButton:hover{
@@ -256,10 +258,6 @@ margin-right: 10px;
 }
 
 /****** HEBERGEMENTS AND POPULAIRES ***********/
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
-}
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -272,30 +270,42 @@ margin-right: 10px;
 
 .groupCard{
     width: 100%;
-    justify-content: space-between;
+}
+
+.groupCard a{
+    width: 31%;
+}
+
+.noWrap{
+    white-space: nowrap;
 }
 
 .groupCard .card{
-width: 245px;
-height: 207px;
+width: 100%;
+height: 216px;
 padding-bottom: 15px;
 margin-bottom: 30px;
 }
 
 .groupCard .card img{
     width: 100%;
-    height: 55%;
+    height: 125px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
 .groupCard .card h3, p{
-    margin: 10px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .groupCard a{
     color: black;
 }
+
+.groupCard .card .fiveStars{
+    margin-top: 15px;
+}
+
 
 .fiveStars i{
     color: var(--main-color);
@@ -310,7 +320,7 @@ color: var(--main-bg-color);
 }
 
 .hebergements h2{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 /****** Populaires ***********/
@@ -318,10 +328,8 @@ color: var(--main-bg-color);
     width: 32%;
 }
 
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.populaires-title{
+    margin: 0px;
 }
 
 .populaires-cards .card {
@@ -358,6 +366,9 @@ color: var(--main-bg-color);
     margin-bottom: 5px;
 }
 
+div .neutralStar{
+    color: var(--main-bg-color);
+}
 /************ ACTIVITES ********************/
 
 .section-activités{
@@ -371,9 +382,14 @@ color: var(--main-bg-color);
     width: 100%;
 }
 
+.activitésGroupcards a{
+    width: 23%;
+}
+
 .activitésGroupcards .card{
     padding: 0 0 5px 0;
-    width: 300px;
+    width: 100%;
+    min-height: 450px;
 }
 
 .activitésGroupcards .card img{
@@ -383,7 +399,7 @@ color: var(--main-bg-color);
 }
 
 .activitésGroupcards .card h3{
-    margin-left: 20px;
+    margin: 15px 20px;
 }
 
 /********** FOOTER  *******************/
@@ -441,8 +457,7 @@ footer div{
     /** Activités ***/
 
     .activitésGroupcards .card{
-        width: 200px;
-        height: 270px;
+        min-height: 290px;
     }
 
     .activitésGroupcards .card img{
@@ -491,7 +506,11 @@ footer div{
     }
 
     /* Navbar */
-    nav{
+    nav {
+        margin-bottom: 50px;
+    }
+    
+    nav.flexBetween{
         display: block;   
     }
 
@@ -526,10 +545,13 @@ footer div{
         justify-content: space-around;
     }
 
+    .filterButtonMobileDiv{
+        width: 100%;
+    }
+
     .filterButton{
-        width: 160px;
-        margin-bottom: 20px;
-        padding: auto;
+        width: 40%;
+        margin :0px 5px 20px 5px;
     }
      
     /** Hebergement et populaire **/
